@@ -147,7 +147,7 @@ class Portfolio extends Component {
 
 	render(){
 	  return (
-		<div className='transitionClass col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6' style={this.activeStyle(this.state.nowDesign)}>
+		<div className='transitionClass col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6' style={this.activeStyle(this.state.nowDesign)}>
 					
 			<div className="supMarginContent" ></div>	
 			

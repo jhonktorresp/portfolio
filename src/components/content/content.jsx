@@ -25,15 +25,15 @@ class Content extends Component {
 	
 			
 	setTypeDesign = () => {
-		const md = 992;
+		const lg = 1200;
 		var value = window.innerWidth;
 		
 		console.log(value)
-		if(value>=md && this.state.nowDesign!=='desktop'){
+		if(value>=lg && this.state.nowDesign!=='desktop'){
 			this.setState({
 				nowDesign: 'desktop',
 			});	
-		}else if(value<md && this.state.nowDesign!=='mobile'){
+		}else if(value<lg && this.state.nowDesign!=='mobile'){
 			this.setState({
 				nowDesign: 'mobile',
 			});				

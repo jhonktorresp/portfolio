@@ -47,7 +47,7 @@ class Profile extends Component {
 	activeValue(value,design){
 
 		if((value==='profile' && design==='desktop') || design==='mobile'){
-			return 'col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6'
+			return 'col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6'
 		}
 		
 		return '';

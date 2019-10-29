@@ -56,7 +56,7 @@ class Header extends Component {
 			<div className='row'>
 			
 			
-				<div className='col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6'>
+				<div className='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6'>
 				
 					<div className='row ligthBorder'>
 
@@ -79,10 +79,10 @@ class Header extends Component {
 				
 				</div>
 			
-				<div className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6'>
+				<div className='col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6'>
 
-					<div className='row ligthBorder d-none d-sm-none d-sm-none d-md-none d-lg-flex d-xl-flex'>
-						<div className='col-3 col-sm-3 col-md-3 col-lg-4 col-xl-4' ></div>
+					<div className='row ligthBorder d-none d-sm-none d-sm-none d-md-none d-lg-none d-xl-flex'>
+						<div className='col-3 col-sm-3 col-md-3 col-lg-3 col-xl-4' ></div>
 						<div className='col-6 maxHMenu' >
 							<div className='d-table mx-auto'>
 								<span className={'profile' === this.state.nowActive ? 'menuButtonOn mr-4' : 'menuButton mr-4'} onClick={()=>this.changeStatus('profile')} >{this.state.nowIdiom.header.top.opt1}</span>
@@ -90,18 +90,18 @@ class Header extends Component {
 								<span className={'contact' === this.state.nowActive ? 'menuButtonOn' : 'menuButton'} onClick={()=>this.changeStatus('contact')}  >{this.state.nowIdiom.header.top.opt3}</span>
 							</div>
 						</div>
-						<div className='col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2' ></div>
+						<div className='col-3 col-sm-3 col-md-3 col-lg-3 col-xl-2' ></div>
 					</div>				
 				
 					<div className='row'>
-						<div className='col-3 col-sm-3 col-md-3 col-lg-4 col-xl-4' ></div>
+						<div className='col-3 col-sm-3 col-md-3 col-lg-3 col-xl-4' ></div>
 						<div className='col-6' >
 							<div className='d-table mx-auto minusOne'>
 								<span onClick={()=>this.changeIdiom('es')} className='menuButtonBot mr-4'>{this.state.nowIdiom.header.bot.idiom1}</span>
 								<span onClick={()=>this.changeIdiom('en')}  className='menuButtonBot mr-4'>{this.state.nowIdiom.header.bot.idiom2}</span>
 							</div>
 						</div>
-						<div className='col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2' ></div>
+						<div className='col-3 col-sm-3 col-md-3 col-lg-3 col-xl-2' ></div>
 					</div>					
 				
 				
