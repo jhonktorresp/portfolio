@@ -104,9 +104,9 @@ class Portfolio extends Component {
 		
 		if(source!==undefined){
 			if(source.type==="v"){
-				return <video key={source.value} width="100%" height="100%" controls autoPlay><source src={this.getMedia(source)} type="video/mp4" /></video>;
+				return <video className='embed-responsive-item' key={source.value} width="100%" height="100%" controls autoPlay><source src={this.getMedia(source)} type="video/mp4" /></video>;
 			}else{
-				return <img alt='' width="100%" height="100%" src={this.getMedia(source)} />;
+				return <img className='embed-responsive-item' key={source.value} alt='' width="100%" height="100%" src={this.getMedia(source)} />;
 			}
 		}
 		
@@ -160,8 +160,8 @@ class Portfolio extends Component {
 			<div className="supMarginContent" ></div>	
 			
 			<div className='row'>
-				<div className="col-2"></div>
-				<div className="col-8 galleryContainer p-0">
+				<div className="col-1 col-xl-2"></div>
+				<div className="col-10 col-xl-8 embed-responsive embed-responsive-16by9 p-0">
 
 			<div className='row position-absolute w-100 h-100 ml-0 mr-0'>
 			
@@ -180,7 +180,7 @@ class Portfolio extends Component {
 
 				
 				</div>
-				<div className="col-2"></div>				
+				<div className="col-1 col-xl-2"></div>				
 			</div>			
 			
 	
