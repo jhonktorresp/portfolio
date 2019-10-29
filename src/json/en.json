@@ -1,0 +1,194 @@
+{
+	
+	"header":{
+		"top":{
+			"opt1":"Home",
+			"opt2":"Portfolio",
+			"opt3":"Contact"
+		},
+		"bot":{
+			"idiom1":"Spanish",
+			"idiom2":"English"
+		}
+	},
+	
+	"profile":{
+		"p1":{
+			"title":"Professional Profile",
+			"subtitle":"Download Curriculum Vitae"
+		},
+		"p2":{
+			"title":"Education",
+			"content":"Software Engineer - Universidad Simón Bolívar"
+		},
+		
+		"p3":{
+			"title":"Knowledge",
+			"subtitle1":"Avanced",
+			"subtitle2":"Basic",
+			"subtitle3":"Work Environment"
+		},
+		
+		"p4":{
+			"title":"Interest",
+			"item1":"Software Architecture",
+			"item2":"Web Development",
+			"item3":"Big Data",
+			"item4":"Artificial Intelligence"
+		}		
+	
+		
+	},
+	
+	"portfolio":{
+		"title":"Projects"
+	
+	},
+	
+	"controls":{
+		"title":"Portfolio"
+	
+	},
+	
+	"contact":{
+		"title":"Want to work together?",
+		"subtitle":"Contact me:",
+		"send_msg":"Send",
+		"f1_label":"Your email:",
+		"f1_placeholder":"Write your contact email here",
+		"f1_error":"Please write a valid email",
+		"f2_label":"Your message:",
+		"f2_placeholder":"Write your message here",
+		"f2_error":"Please write a message",
+		"success_msg":"Email sent successfully"
+	},
+	
+	"projects":{
+			"1":{
+				"title":"Wonder Personality",
+				"thumbnail":"./sources/wonder/img/thumbnail.png",
+				"desc":"<a href='http://wonderpersonality.com'>wonderpersonality.com</a> <br> Wonder Personality is a site to learn about your personality trought a quiz. It have a responsive design. And is worked with a lot of detail in the visuals and structure. Making it looks proffesional, clean and beautifull. ",
+				"tech":{
+					"1":{
+						"src":"./img/icons/CSS.png",
+						"value":"CSS"
+					},
+					"2":{
+						"src":"./img/icons/javascript.png",
+						"value":"Javascript"
+					},
+					"3":{
+						"src":"./img/icons/html.png",
+						"value":"HTML"
+					}
+				},
+				"sources":{
+					"1":{
+						"value":"./sources/wonder/vid/v1.mp4",
+						"type":"v",
+						"title":"Project Video",
+						"desc":"Overview of the site"
+					}
+				}
+			},
+			"2":{
+				"title":"Operation Smile",
+				"thumbnail":"./sources/osv/img/thumbnail.png",
+				"desc":"This project is an administration module made for internal use, the goal of the project was create some plots with the data of the database. The idea was the user could make this plots just selecting some options. Letting the workers gets a fast first seek of the journals in a specific region and period of time. This was a prototype, wich only need some template in the PDF output, The data used in the development was just for testing.",
+				"tech":["Django","Javascript","HTML"],
+				"sources":{
+					"1":{
+						"value":"./sources/osv/vid/v1.mp4",
+						"type":"v",
+						"title":"Demo Video",
+						"desc":"Demo to show report generation"
+					},
+					"2":{
+						"value":"./sources/osv/img/s1.png",
+						"type":"i",
+						"title":"Screenshot # 1",
+						"desc":"Select of regions"
+					},
+					"3":{
+						"value":"./sources/osv/img/s2.png",
+						"type":"i",
+						"title":"Screenshot # 2",
+						"desc":"Select type of question"
+					},
+					"4":{
+						"value":"./sources/osv/img/s3.png",
+						"type":"i",
+						"title":"Screenshot # 3",
+						"desc":"Select of age"
+					},
+					"5":{
+						"value":"./sources/osv/img/s4.png",
+						"type":"i",
+						"title":"Screenshot # 4",
+						"desc":"Select type of plot (Bars) and show in place"
+					},
+					"6":{
+						"value":"./sources/osv/img/s5.png",
+						"type":"i",
+						"title":"Screenshot",
+						"desc":"Select type of plot (Pie) and show in place"
+					},
+					"7":{
+						"value":"./sources/osv/img/s6.png",
+						"type":"i",
+						"title":"Screenshot # 6",
+						"desc":"Prototype of report with the plots"
+					}
+				}
+			},
+			"3":{
+				"title":"Snake IA",
+				"thumbnail":"./sources/snake/img/thumbnail.png",
+				"desc":"This small project was to learn some aplicaitons of the sklearn library and the basics of machine learning algorythms and mathematic models. This first part assume the snake have length one. The goal was to make the snake learn to not hit with the borders. At first the Nearest Neighbors algorythm work really well because the square form of the scene of game. But when the there is some irregular borders in the middle, this model get difficult to classify correctly when it pass trought the corner. The random forest algorythm have a more computational cost to make the model improve but get better results",
+				"tech":["Python","SKLEARN"],
+				"sources":{
+					"1":{
+						"value":"./sources/snake/vid/vid1.mp4",
+						"type":"v",
+						"title":"Video # 1",
+						"desc":"State of the snake with 100 games to learn (Nearest Neighbors)"
+					},
+					"2":{
+						"value":"./sources/snake/vid/vid2.mp4",
+						"type":"v",
+						"title":"Video # 2",
+						"desc":"State of the snake with 10000 games to learn (Nearest Neighbors)"
+					},
+					"3":{
+						"value":"./sources/snake/vid/vid3.mp4",
+						"type":"v",
+						"title":"Video # 3",
+						"desc":"State of the snake with 100000 games to learn (Nearest Neighbors Algorythm)"
+					},
+					"4":{
+						"value":"./sources/snake/vid/vid4.mp4",
+						"type":"v",
+						"title":"Video # 4",
+						"desc":"State of the snake with 10000 games to learn (Random Forest Algorythm)"
+					}
+				}	
+			},
+			"4":{
+				"title":"See Together",
+				"thumbnail":"./sources/see/img/thumbnail.png",
+				"desc":"An personal project to learn how to use django channels to achieve a chat with Redis. The sync follow the same principle of the chat comunication, making it really realiable in matter of time of synchronization",
+				"tech":["Django","Javascript","HTML"],
+				"sources":{
+					"1":{
+						"value":"./sources/see/vid/v1.mp4",
+						"type":"v",
+						"title":"Video # 1",
+						"desc":"Synchronize video and chat"
+					}
+				}			
+			}
+		}
+
+	
+	
+}

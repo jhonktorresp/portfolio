@@ -1,0 +1,183 @@
+{
+			
+			
+	"header":{
+		"top":{
+			"opt1":"Inicio",
+			"opt2":"Portafolio",
+			"opt3":"Contacto"
+		},
+		"bot":{
+			"idiom1":"Español",
+			"idiom2":"Ingles"
+		}
+	},			
+
+
+	"profile":{
+		"p1":{
+			"title":"Perfil Profesional",
+			"subtitle":"Descargar Curriculum Vitae"
+		},
+		"p2":{
+			"title":"Educación",
+			"content":"Ingeniero en Computación - Universidad Simón Bolívar"
+		},
+
+		"p3":{
+			"title":"Conocimientos",
+			"subtitle1":"Avanzado",
+			"subtitle2":"Básico",
+			"subtitle3":"Ambiente de Desarrollo"
+		},
+		
+		"p4":{
+			"title":"Intereses",
+			"item1":"Arquitectura de Software",
+			"item2":"Desarrollo Web",
+			"item3":"Big Data",
+			"item4":"Inteligencia Artificial"
+		}		
+		
+		
+	},
+	
+	"portfolio":{
+		"title":"Proyectos"
+	
+	},
+
+	"controls":{
+		"title":"Portafolio"
+	
+	},
+
+	"contact":{
+		"title":"¿Quieres trabajar juntos?",
+		"subtitle":"Contáctame:",
+		"send_msg":"Enviar",
+		"f1_label":"Tu correo:",
+		"f1_placeholder":"Escribe tu correo electronico de contacto aquí",
+		"f1_error":"Por favor escriba un correo válido",
+		"f2_label":"Tu mensaje:",
+		"f2_placeholder":"Escribe tu mensaje aquí",
+		"f2_error":"Por favor escriba un mensaje",
+		"success_msg":"Mensaje enviado correctamente"
+		
+	},
+	"projects":{
+			"1":{
+				"title":"Wonder Personality",
+				"thumbnail":"./sources/wonder/img/thumbnail.png",
+				"desc":"<a href='http://wonderpersonality.com'>wonderpersonality.com</a> <br> Wonder Personality es un sitio para aprender acerca de tu personalidad a traves de un quiz, posee un diseño responsive y un gran cuidado en los detalles visuales y de estructura, haciendolo lucir profesional y limpio.",
+				"tech":["PHP","Javascript","HTML"],
+				"sources":{
+					"1":{
+						"value":"./sources/wonder/vid/v1.mp4",
+						"type":"v",
+						"title":"Video del proyecto",
+						"desc":"Vista superficial del sitio"
+					}
+				}
+			},
+			"2":{
+				"title":"Operation Smile",
+				"thumbnail":"./sources/osv/img/thumbnail.png",
+				"desc":"Este es un proyecto de un módulo administrativo de uso interno, el objetivo del proyecto fue crear algunas gráficas a partir de información en una base de datos. La idea principal es que el usuario pudiera hacer las graficas solamente selecconando las distinta combinación de opciones disponibles, dejando a los rabajadores obtener rapidos vistazos de las jordanas realizadas en un periodo de tiempo y región en especifico. El proyecto fue un prototipo, el cual solo necesita una plantilla para el PDF. Cabe destacar que los datos utilizados durante el desarrollo fueron de prueba",
+				"tech":["Django","Javascript","HTML"],
+				"sources":{
+					"1":{
+						"value":"./sources/osv/vid/v1.mp4",
+						"type":"v",
+						"title":"Video de demostración",
+						"desc":"Demo to show report generation"
+					},
+					"2":{
+						"value":"./sources/osv/img/s1.png",
+						"type":"i",
+						"title":"Screenshot # 1",
+						"desc":"Selecciona las regiones"
+					},
+					"3":{
+						"value":"./sources/osv/img/s2.png",
+						"type":"i",
+						"title":"Screenshot # 2",
+						"desc":"Selecciona el tipo de pregunta a realizar"
+					},
+					"4":{
+						"value":"./sources/osv/img/s3.png",
+						"type":"i",
+						"title":"Screenshot # 3",
+						"desc":"Selecciona la edad"
+					},
+					"5":{
+						"value":"./sources/osv/img/s4.png",
+						"type":"i",
+						"title":"Screenshot # 4",
+						"desc":"Selecciona el tipo de gráfica (Barras) y lo muestra en el lugar"
+					},
+					"6":{
+						"value":"./sources/osv/img/s5.png",
+						"type":"i",
+						"title":"Screenshot",
+						"desc":"Selecciona el tipo de gráfica (Torta) y lo muestra en el lugar"
+					},
+					"7":{
+						"value":"./sources/osv/img/s6.png",
+						"type":"i",
+						"title":"Screenshot # 6",
+						"desc":"Prototipo del reporte con las gráficas generadas"
+					}
+				}
+			},
+			"3":{
+				"title":"Snake IA",
+				"thumbnail":"./sources/snake/img/thumbnail.png",
+				"desc":"Este pequeño proyecto, tenia el objetivo de aprender algunas aplicaciones de la liberia sklearn y sobre lo básico de los algoritmos de machine learning y modelos matematicas. La primera parte asume que el snake tiene una longitud 1. El objetivo era hacer que el sanek aprendiera a no chocarse contra los muros . Al principio el algoritmo de Nearest Neighbors funcionó realmente bien. Sin embargo cuando existian muros entre la forma cuadrada, se dificultaba para el modelo obtener una clasificación apropiada cuando pasaba atraves de los bordes . Al algoritmo de random forest obtuvo un mejor desempeño a un costo de procesamiento computacional significativamente mayor ",
+				"tech":["Python","SKLEARN"],
+				"sources":{
+					"1":{
+						"value":"./sources/snake/vid/vid1.mp4",
+						"type":"v",
+						"title":"Video # 1",
+						"desc":"Estado del snake con 100 juegos (Nearest Neighbors)"
+					},
+					"2":{
+						"value":"./sources/snake/vid/vid2.mp4",
+						"type":"v",
+						"title":"Video # 2",
+						"desc":"Estado del snake con 10000 juegos (Nearest Neighbors)"
+					},
+					"3":{
+						"value":"./sources/snake/vid/vid3.mp4",
+						"type":"v",
+						"title":"Video # 3",
+						"desc":"Estado del snake con 100000 juegos  (Nearest Neighbors Algorythm)"
+					},
+					"4":{
+						"value":"./sources/snake/vid/vid4.mp4",
+						"type":"v",
+						"title":"Video # 4",
+						"desc":"Estado del snake con 10000 juegos (Random Forest Algorythm)"
+					}
+				}	
+			},
+			"4":{
+				"title":"See Together",
+				"thumbnail":"./sources/see/img/thumbnail.png",
+				"desc":"Un proyecto personal para aprender como usar django channels para y lograr realizar el chat apoyado con Redis. La sincronización siguio el mismo principio de la comunicación por chat, haciendolo bastante confiable en cuestions de sincronización del tiempo",
+				"tech":["Django","Javascript","HTML"],
+				"sources":{
+					"1":{
+						"value":"./sources/see/vid/v1.mp4",
+						"type":"v",
+						"title":"Video # 1",
+						"desc":"Sincronizando video y chat"
+					}
+				}			
+			}
+		}
+
+	
+	
+}

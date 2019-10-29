@@ -1,0 +1,54 @@
+@import 'vars';
+
+.supMargin{
+	height: 45px;
+}
+
+.ligthBorder{
+	border-bottom: solid 1px $lineColor;
+}
+
+.menuButton{
+	font-size:$fontSizeMenu;
+	&:hover{
+		border-bottom: solid 2px $lineColorHover;
+		padding-bottom: 1px;
+		cursor:pointer;
+	}
+}
+
+.menuButtonBot{
+	font-size:$fontSizeMenuBot;
+	&:hover{
+		border-top: solid 2px $lineColorHover;
+		cursor:pointer;
+	}
+}
+
+.minusOne{
+	margin-top:-1px;
+}
+
+.menuButtonOn{
+	font-size:$fontSizeMenu;
+	font-weight:600;
+	padding-bottom: 1px;	
+	border-bottom: solid 2px $lineColorHover;
+	
+}
+
+.nameTitle{
+    font-size: $fontSizeName;
+    background: white;
+    padding-left: 10px;
+    padding-right: 4px;
+    min-width: 225px;
+    position: relative;
+    margin-top: -35px;
+
+}
+
+.maxHMenu{
+	height:30px;
+}
+
