@@ -78,7 +78,7 @@ class Portfolio extends Component {
 			
 		const cls = Number(nowProject)===Number(pointer) ? 'thumbnailActive' : 'thumbnailInactive';
 
-		return <div className='col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 pb-3'><img alt='' width='100%' height='100%' src={this.getMedia(source)} className={'pr-1 pl-1 pt-2 pb-2 '+cls} key={source} onClick={() => this.props.handler(pointer)} /></div>
+		return <div key={source} className='col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 pb-3'><img alt='' width='100%' height='100%' src={this.getMedia(source)} className={'pr-1 pl-1 pt-2 pb-2 '+cls} onClick={() => this.props.handler(pointer)} /></div>
 
 
 	}
@@ -182,7 +182,7 @@ class Portfolio extends Component {
 			
 			<div className='row'>
 				<div className="col-1"></div>			
-				<div className="col-10 contentList contentBox" dangerouslySetInnerHTML={{ __html: this.state.nowIdiom.projects[this.state.nowProject].desc }}>
+				<div className="col-10 contentBox" dangerouslySetInnerHTML={{ __html: this.state.nowIdiom.projects[this.state.nowProject].desc }}>
 
 				</div>
 				<div className="col-1"></div>			

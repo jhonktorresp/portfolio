@@ -96,3 +96,10 @@ body{
   -webkit-transition: opacity 0.5s ease-out, width 1s ease-out, max-width 1s ease-out, visibility 1s ease-out,height 1s ease-out, max-height 1s ease-out;
   transition: opacity 0.5s ease-out, width 1s ease-out, max-width 1s ease-out, visibility 1s ease-out,height 1s ease-out, max-height 0.1s ease-out;
 }
+
+.contentBox{
+	background: whitesmoke;
+    padding: 15px;
+    text-align: justify!important;
+    border-bottom: solid 1px;
+}

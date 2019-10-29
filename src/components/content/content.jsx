@@ -28,7 +28,6 @@ class Content extends Component {
 		const lg = 1200;
 		var value = window.innerWidth;
 		
-		console.log(value)
 		if(value>=lg && this.state.nowDesign!=='desktop'){
 			this.setState({
 				nowDesign: 'desktop',
