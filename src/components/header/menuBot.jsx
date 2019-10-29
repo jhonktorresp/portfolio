@@ -9,8 +9,8 @@ class MenuBot extends Component {
 	render(){
 	  return (
 		<div className='d-table mx-auto minusOne'>
-			<span className='menuButtonBot mr-4'>Spanish</span>
-			<span className='menuButtonBot mr-4'>English</span>
+			<span className='menuButtonBot mr-2'>Spanish</span>
+			<span className='menuButtonBot ml-2'>English</span>
 		</div>
 		);
 	}

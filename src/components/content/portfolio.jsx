@@ -8,31 +8,41 @@ class Portfolio extends Component {
 		nowIdiom:this.props.nowIdiom,
 		nowProject:this.props.nowProject,
 		nowSource:this.props.nowSource,
-		nowActive:this.props.nowActive
-
+		nowActive:this.props.nowActive,
+		nowDesign:this.props.nowDesign
 	}
 	
 	static getDerivedStateFromProps(props, state) {
 
-
+		var changed = false;
+		var changing = {}
 
 		if(props.nowIdiom.profile.p1.title !== state.nowIdiom.profile.p1.title){
-			
-		  return {
-			nowIdiom:props.nowIdiom
-		  };	
+		   
+		   changed = true;
+		   changing.nowIdiom = props.nowIdiom;
 
-		}else if(props.nowProject !== state.nowProject){		
-		  return {
-			nowProject:props.nowProject,
-			nowSource:props.nowSource
-		  };	
+		}
+	
+		if(props.nowProject !== state.nowProject){
+		    changed = true;			
+			changing.nowProject= props.nowProject;
+			changing.nowSource = props.nowSource;
+		}
+	
+		if(props.nowActive !== state.nowActive){
+		    changed = true;			
+			changing.nowActive = props.nowActive;
+		}
+		
+		if(props.nowDesign !== state.nowDesign){		
+			changed = true;		
+			changing.nowDesign = props.nowDesign;
 		  
-		}else if(props.nowActive !== state.nowActive){		
-		  return {
-			nowActive:props.nowActive
-		  };	
-		  
+		}
+		
+		if(changed){
+			return changing;
 		}
 
 		return null;
@@ -114,6 +124,17 @@ class Portfolio extends Component {
 
 	}
 
+	activeStyle(design){
+		
+		if(design==='mobile'){
+			return {background:'whitesmoke',marginTop:'30px',marginBottom:'30px'}
+		}else{
+			return {}
+		}
+		
+	}
+
+
 	prevMedia = () => {
 		
 		if(this.state.nowIdiom.projects[this.state.nowProject].sources[Number(this.state.nowSource)-1] !== undefined){
@@ -126,7 +147,7 @@ class Portfolio extends Component {
 
 	render(){
 	  return (
-		<div className='transitionClass col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6'>
+		<div className='transitionClass col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6' style={this.activeStyle(this.state.nowDesign)}>
 					
 			<div className="supMarginContent" ></div>	
 			
@@ -190,6 +211,8 @@ class Portfolio extends Component {
 	<div className="col-8 contentOne pl-4">{this.state.nowIdiom.projects[this.state.nowProject].sources[this.state.nowSource].desc}</div>
 				<div className="col-2"></div>				
 			</div>		
+			
+				<div className="supMarginContent" ></div>			
 			
 		</div>
 		);

@@ -10,26 +10,37 @@ class Contact extends Component {
 		sent:false,
 		try_sent:false,
 		error_1:false,
-		error_2:false
+		error_2:false,
+		nowDesign:this.props.nowDesign
 	}
 	
 
 	static getDerivedStateFromProps(props, state) {
 
+		var changed = false;
+		var changing = {}
+
+
 		if(props.nowIdiom.profile.p1.title !== state.nowIdiom.profile.p1.title){
-			
-		  return {
-			nowIdiom:props.nowIdiom
-		  };	
+		   
+		   changed = true;
+		   changing.nowIdiom = props.nowIdiom;
 
 		}
 
 		if(props.nowActive !== state.nowActive){
-			
-		  return {
-			nowActive:props.nowActive
-		  };	
-
+		    changed = true;			
+			changing.nowActive = props.nowActive;
+		}
+		
+		if(props.nowDesign !== state.nowDesign){		
+			changed = true;		
+			changing.nowDesign = props.nowDesign;
+		  
+		}
+		
+		if(changed){
+			return changing;
 		}
 
 		return null;
@@ -86,9 +97,9 @@ class Contact extends Component {
 	  }	
 	
 	
-	activeValue(value){
+	activeValue(value,design){
 		
-		if(value==='contact'){
+		if((value==='contact' && design==='desktop') || design==='mobile'){
 			return 'col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6'
 		}else{
 			return ''
@@ -96,14 +107,15 @@ class Contact extends Component {
 		
 	}
 
-	activeStyle(value){
-
-		if(value!=='contact'){
+	activeStyle(value,design){
+		
+		if(value!=='contact' && design==='desktop'){
 			return {opacity:'0',height:'70vh',maxHeight:'70vh',maxWidth:'0px',width:'0px',visibility:'hidden',overflow:'hidden'}
-		}else{
-			return {}
+		}else if(design==='mobile'){
+			return {background:'whitesmoke',marginTop:'30px',marginBottom:'30px'}
 		}
 		
+		return {}
 	}
 		
 	 handleChange1 = (event) => {
@@ -121,21 +133,21 @@ class Contact extends Component {
 	render(){
 	  return (
 
-		<div className={'transitionClass '+this.activeValue(this.state.nowActive)} style={this.activeStyle(this.state.nowActive)}>
-				
+		<div className={'transitionClass '+this.activeValue(this.state.nowActive,this.state.nowDesign)} style={this.activeStyle(this.state.nowActive,this.state.nowDesign)}>
+					
 
 			<div className="supMarginContent" ></div>					
 				
 				
 			<div className='row'>
 				<div className="col-2"></div>
-				<div className="col-8 titleThree text-right"><b>{this.state.nowIdiom.contact.title}</b></div>
+				<div className="col-8 titleThree text-center text-sm-center text-md-center text-lg-right text-xl-right"><b>{this.state.nowIdiom.contact.title}</b></div>
 				<div className="col-2"></div>				
 			</div>				
 	
 			<div className='row'>
 				<div className="col-2"></div>
-				<div className="col-8 titleFour text-right"><b>{this.state.nowIdiom.contact.subtitle}</b></div>
+				<div className="col-8 titleFour text-center text-sm-center text-md-center text-lg-right text-xl-right"><b>{this.state.nowIdiom.contact.subtitle}</b></div>
 				<div className="col-2"></div>				
 			</div>		
 			

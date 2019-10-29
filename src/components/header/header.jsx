@@ -68,11 +68,11 @@ class Header extends Component {
 					</div>						
 				
 						<div className='row'>
-						<div className='col-3' ></div>
-						<div className='col-6' >
+						<div className='flex-fill' ></div>
+						<div>
 							<Name></Name>
 						</div>
-						<div className='col-3' ></div>
+						<div className='flex-fill' ></div>
 					</div>					
 							
 				
@@ -112,7 +112,7 @@ class Header extends Component {
 			
 			
 			
-			<Content nowIdiom={this.state.nowIdiom} nowActive={this.state.nowActive}></Content>
+			<Content nowDesign={this.state.nowDesign} nowIdiom={this.state.nowIdiom} nowActive={this.state.nowActive}></Content>
 			
 			
 			

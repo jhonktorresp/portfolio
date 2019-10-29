@@ -19,10 +19,26 @@ class Content extends Component {
 		nowProject:this.randomProject(false),
 		nowActive:this.props.nowActive,
 		nowChangeProject:this.nowChangeProject,
-		nowSource:1
+		nowSource:1,
+		nowDesign:this.props.nowDesign
 	}
 	
-	
+			
+	setTypeDesign = () => {
+		const md = 992;
+		var value = window.innerWidth;
+		
+		console.log(value)
+		if(value>=md && this.state.nowDesign!=='desktop'){
+			this.setState({
+				nowDesign: 'desktop',
+			});	
+		}else if(value<md && this.state.nowDesign!=='mobile'){
+			this.setState({
+				nowDesign: 'mobile',
+			});				
+		}
+	}	
 	
 	randomProject(state){
 		
@@ -50,7 +66,10 @@ class Content extends Component {
 	}
 
 	componentDidMount() {
+		
 	  this.initInterval();
+	  this.setTypeDesign();
+	  window.onresize = this.setTypeDesign;
 	}
 
 	componentDidUpdate() {
@@ -59,7 +78,7 @@ class Content extends Component {
 			this.clearInter();
 		}else{
 			this.clearInter();
-			this.interval = setInterval(() => this.setState({ nowProject: this.randomProject(false) ,nowSource:1}), 15000);
+			this.initInterval();
 		}
 
 	}
@@ -96,10 +115,10 @@ class Content extends Component {
 		<div className='container-fluid'>
 			<div className="row">
 			
-				<Profile nowIdiom={this.state.nowIdiom} nowActive={this.state.nowActive}></Profile>
-				<Portfolio nowProject={this.state.nowProject} nowSource={this.state.nowSource} nowIdiom={this.state.nowIdiom} nowActive={this.state.nowActive}></Portfolio>
-				<Controls handler={this.handler} nowProject={this.state.nowProject} nowSource={this.state.nowSource} nowIdiom={this.state.nowIdiom} nowActive={this.state.nowActive}></Controls>
-				<Contact nowIdiom={this.state.nowIdiom} nowActive={this.state.nowActive}></Contact>
+				<Profile nowDesign={this.state.nowDesign} nowIdiom={this.state.nowIdiom} nowActive={this.state.nowActive}></Profile>
+				<Portfolio nowDesign={this.state.nowDesign} nowProject={this.state.nowProject} nowSource={this.state.nowSource} nowIdiom={this.state.nowIdiom} nowActive={this.state.nowActive}></Portfolio>
+				<Controls nowDesign={this.state.nowDesign} handler={this.handler} nowProject={this.state.nowProject} nowSource={this.state.nowSource} nowIdiom={this.state.nowIdiom} nowActive={this.state.nowActive}></Controls>
+				<Contact nowDesign={this.state.nowDesign} nowIdiom={this.state.nowIdiom} nowActive={this.state.nowActive}></Contact>
 				
 			</div>
 		</div>

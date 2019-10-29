@@ -5,6 +5,7 @@ class Profile extends Component {
 	state={
 		nowIdiom:this.props.nowIdiom,
 		nowActive:this.props.nowActive,
+		nowDesign:this.props.nowDesign
 	}
 	
 	
@@ -12,39 +13,50 @@ class Profile extends Component {
 	
 	static getDerivedStateFromProps(props, state) {
 
+		var changed = false;
+		var changing = {}
+
 		if(props.nowIdiom.profile.p1.title !== state.nowIdiom.profile.p1.title){
-			
-		  return {
-			nowIdiom:props.nowIdiom
-		  };	
+		   
+		   changed = true;
+		   changing.nowIdiom = props.nowIdiom;
 
 		}
-
+		
 		if(props.nowActive !== state.nowActive){
-			
-		  return {
-			nowActive:props.nowActive
-		  };	
+		    changed = true;			
+			changing.nowActive = props.nowActive;
 
+		}
+		
+		if(props.nowDesign !== state.nowDesign){		
+			changed = true;		
+			changing.nowDesign = props.nowDesign;
+		  
+		}
+
+
+		if(changed){
+			return changing;
 		}
 
 		return null;
 	}	
 	
 	
-	activeValue(value){
-		
-		if(value==='profile'){
+	activeValue(value,design){
+
+		if((value==='profile' && design==='desktop') || design==='mobile'){
 			return 'col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6'
-		}else{
-			return ''
 		}
+		
+		return '';
 		
 	}
 
-	activeStyle(value){
-		
-		if(value!=='profile'){
+	activeStyle(value,design){
+
+		if(value!=='profile' && design==='desktop'){
 			return {opacity:'0',height:'70vh',maxHeight:'70vh',maxWidth:'0px',width:'0px',visibility:'hidden',overflow:'hidden'}
 		}else{
 			return {}
@@ -54,14 +66,14 @@ class Profile extends Component {
 
 	render(){
 	  return (
-		<div className={'transitionClass '+this.activeValue(this.state.nowActive)} style={this.activeStyle(this.state.nowActive)}>
+		<div className={'transitionClass '+this.activeValue(this.state.nowActive,this.state.nowDesign)} style={this.activeStyle(this.state.nowActive,this.state.nowDesign)}>
 				
 			
 			<div className='row'>
 				<div className='flex-fill'></div>
 				<div>
 					<div className='titleOne align-bottom text-center'><b>{this.state.nowIdiom.profile.p1.title}</b></div>
-					<div className='titleTwo text-right'>
+					<div className='titleTwo text-center text-sm-center text-md-center text-lg-right text-xl-right'>
 					
 						<a href="./cv.pdf">{this.state.nowIdiom.profile.p1.subtitle}</a>
 						
@@ -75,7 +87,7 @@ class Profile extends Component {
 			<div className='row'>
 				<div className='col-1'></div>
 				<div className='col-10'>
-					<div className='titleThree'><b>{this.state.nowIdiom.profile.p2.title}</b></div>
+					<div className='titleThree text-center text-sm-center text-md-center text-lg-left text-xl-left'><b>{this.state.nowIdiom.profile.p2.title}</b></div>
 					<div className='contentOne pl-3'>
 					
 					{this.state.nowIdiom.profile.p2.content}
@@ -92,14 +104,14 @@ class Profile extends Component {
 				<div className='col-10'>
 				
 		
-					<div className='titleThree '><b>{this.state.nowIdiom.profile.p3.title}</b></div>
+					<div className='titleThree text-center text-sm-center text-md-center text-lg-left text-xl-left'><b>{this.state.nowIdiom.profile.p3.title}</b></div>
 							<div className="supMarginContentHalf" ></div>	
 			
 					<div className='row'>
 						<div className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 contentOne text-center'>
 						
 							<div><b><i>{this.state.nowIdiom.profile.p3.subtitle1}</i></b></div>
-							<div className='row pl-3'>
+							<div className='row pl-lg-3'>
 								<div className='col-6 contentList text-center'>
 									Python
 								</div>
@@ -109,7 +121,7 @@ class Profile extends Component {
 							</div>
 							
 
-							<div className='row pl-3'>
+							<div className='row pl-lg-3'>
 								<div className='col-6 contentList text-center'>
 									PHP
 								</div>
@@ -120,7 +132,7 @@ class Profile extends Component {
 
 
 
-							<div className='row pl-3'>
+							<div className='row pl-lg-3'>
 								<div className='col-6 contentList text-center'>
 									JavaScript
 								</div>
@@ -133,8 +145,8 @@ class Profile extends Component {
 						
 						<div className='col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 contentOne text-center'>
 						
-							<div className='pl-3'><b><i>{this.state.nowIdiom.profile.p3.subtitle2}</i></b></div>
-							<div className='row pl-3'>
+							<div className='pl-lg-3'><b><i>{this.state.nowIdiom.profile.p3.subtitle2}</i></b></div>
+							<div className='row pl-lg-3'>
 								<div className='col-4 contentList text-center'>
 									C
 								</div>
@@ -146,7 +158,7 @@ class Profile extends Component {
 								</div>
 							</div>
 							
-							<div className='row pl-3'>
+							<div className='row pl-lg-3'>
 								<div className='col-4 contentList text-center'>
 									C#
 								</div>
@@ -158,7 +170,7 @@ class Profile extends Component {
 								</div>
 							</div>
 							
-							<div className='row pl-3'>
+							<div className='row pl-lg-3'>
 								<div className='col-4 contentList text-center'>
 									SQL
 								</div>
@@ -193,23 +205,23 @@ class Profile extends Component {
 				</div>
 				<div className='col-1'></div>
 			</div>		
-
+			<div className="supMarginContent" ></div>	
 			<div className='row'>
 				<div className='col-1'></div>
 				<div className='col-10'>
 				
 		
-					<div className='titleThree'><b>{this.state.nowIdiom.profile.p4.title}</b></div>
+					<div className='titleThree text-center text-sm-center text-md-center text-lg-left text-xl-left'><b>{this.state.nowIdiom.profile.p4.title}</b></div>
 				
 					<div className='row pl-3'>
-						<div className='col-6 contentOne'>{this.state.nowIdiom.profile.p4.item1}</div>
-						<div className='col-6 contentOne'>{this.state.nowIdiom.profile.p4.item2}</div>
+						<div className='col-6 contentOne pb-3 pb-lg-0'>{this.state.nowIdiom.profile.p4.item1}</div>
+						<div className='col-6 contentOne pb-3 pb-lg-0'>{this.state.nowIdiom.profile.p4.item2}</div>
 					</div>
 					
 				
 					<div className='row pl-3'>
-						<div className='col-6 contentOne'>{this.state.nowIdiom.profile.p4.item3}</div>
-						<div className='col-6 contentOne'>{this.state.nowIdiom.profile.p4.item4}</div>
+						<div className='col-6 contentOne pb-3 pb-lg-0'>{this.state.nowIdiom.profile.p4.item3}</div>
+						<div className='col-6 contentOne pb-3 pb-lg-0'>{this.state.nowIdiom.profile.p4.item4}</div>
 					</div>
 					   
 				</div>
