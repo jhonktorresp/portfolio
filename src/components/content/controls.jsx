@@ -103,6 +103,13 @@ class Portfolio extends Component {
 			return require('./../../sources/wonder/img/thumbnail.png')
 		}				
 	
+		if(source.indexOf("guest")>-1){
+			return require('./../../sources/guest/img/thumbnail.png')
+		}			
+	
+		if(source.indexOf("sls")>-1){
+			return require('./../../sources/sls/img/thumbnail.png')
+		}				
 	
 	}
 	makeThumbs(nowPoint,nowProject,nowDesign){

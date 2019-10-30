@@ -186,6 +186,76 @@
 						"desc":"Synchronize video and chat"
 					}
 				}			
+			},
+			"5":{
+				"title":"Instagram feed for big screen in concert",
+				"thumbnail":"./sources/sls/img/thumbnail.png",
+				"desc":"El proyecto consistió en la elaboración de un sistema para es despliegue de imagenes publicadas por usuarios en la red social de instagram para el evento de <a href='https://www.facebook.com/BarrioLatinoOeiras/'>Barrio Latino Oeiras (Portugal)</a> ",
+				"tech":["PHP","Javascript","HTML"],
+				"sources":{
+					"1":{
+						"value":"./sources/sls/vid/v1.mp4",
+						"type":"v",
+						"title":"Video del proyecto en vivo",
+						"desc":"Demo video of the application running in the concert the <a href='https://www.facebook.com/watch/?v=504904333610663'>Original source</a> is from the Official Page of <a href='https://www.facebook.com/BarrioLatinoOeiras/'>Barrio Latino Oeiras (Portugal)</a>"
+					},"2":{
+						"value":"./sources/sls/img/s1.png",
+						"type":"v",
+						"title":"Video del proyecto en vivo",
+						"desc":"Video del proyecto en vivo"
+					},"3":{
+						"value":"./sources/sls/img/s2.png",
+						"type":"v",
+						"title":"Video del proyecto en vivo",
+						"desc":"Video del proyecto en vivo"
+					}
+				}
+			},
+			"6":{
+				"title":"Guest register",
+				"thumbnail":"./sources/guest/img/thumbnail.png",
+				"desc":"<a href='http://wonderpersonality.com'>wonderpersonality.com</a> <br> Wonder Personality is a site to learn about your personality trought a quiz. It have a responsive design. And is worked with a lot of detail in the visuals and structure. Making it looks proffesional, clean and beautifull. ",
+				"tech":{
+					"1":{
+						"src":"./img/icons/CSS.png",
+						"value":"CSS"
+					},
+					"2":{
+						"src":"./img/icons/javascript.png",
+						"value":"Javascript"
+					},
+					"3":{
+						"src":"./img/icons/html.png",
+						"value":"HTML"
+					}
+				},
+				"sources":{
+						"1":{
+							"value":"./sources/sls/vid/v1.mp4",
+							"type":"v",
+							"title":"Captura de pantalla",
+							"desc":"Barrio Latino Oeiras (Portugal)"
+						},
+						"2":{
+							"value":"./sources/sls/vid/v2.mp4",
+							"type":"v",
+							"title":"Captura de pantalla",
+							"desc":"Barrio Latino Oeiras (Portugal)"
+						},
+						"3":{
+							"value":"./sources/sls/img/s1.png",
+							"type":"i",
+							"title":"Captura de pantalla",
+							"desc":"Barrio Latino Oeiras (Portugal)"
+						},
+						"4":{
+							"value":"./sources/sls/img/s2.png",
+							"type":"i",
+							"title":"Captura de pantalla",
+							"desc":"Barrio Latino Oeiras (Portugal)"
+						}
+						
+				}
 			}
 		}
 

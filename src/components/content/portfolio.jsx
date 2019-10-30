@@ -48,6 +48,7 @@ class Portfolio extends Component {
 		return null;
 	}		
 	
+	//Should be fixed with list of const
 	getMedia(source){
 		
 
@@ -97,8 +98,45 @@ class Portfolio extends Component {
 			return require('./../../sources/snake/vid/vid4.mp4')
 		}					
 
+		if(source.value.indexOf("sls/vid/v1.mp4")>-1){
+			return require('./../../sources/sls/vid/v1.mp4')
+		}
+		
+		if(source.value.indexOf("sls/vid/v2.mp4")>-1){
+			return require('./../../sources/sls/vid/v2.mp4')
+		}
+		
+		if(source.value.indexOf("sls/img/s1.png")>-1){
+			return require('./../../sources/sls/img/s1.png')
+		}
+
+		if(source.value.indexOf("sls/img/s2.png")>-1){
+			return require('./../../sources/sls/img/s2.png')
+		}
+		
+		
+		if(source.value.indexOf("guest/img/s1.png")>-1){
+			return require('./../../sources/guest/img/s1.png')
+		}
+				
+		if(source.value.indexOf("guest/img/s2.png")>-1){
+			return require('./../../sources/guest/img/s2.png')
+		}		
+		
+		if(source.value.indexOf("guest/img/s3.png")>-1){
+			return require('./../../sources/guest/img/s3.png')
+		}		
+		
+		if(source.value.indexOf("guest/img/s4.png")>-1){
+			return require('./../../sources/guest/img/s4.png')
+		}
+		
+		if(source.value.indexOf("guest/img/s5.png")>-1){
+			return require('./../../sources/guest/img/s5.png')
+		}
 		
 	}
+	
 	
 	generateMedia(source){
 		
@@ -206,9 +244,13 @@ class Portfolio extends Component {
 			</div>		
 							<div className="supMarginContentHalf" ></div>				
 			<div className='row'>
-				<div className="col-2"></div>
-	<div className="col-8 contentOne pl-4">{this.state.nowIdiom.projects[this.state.nowProject].sources[this.state.nowSource].desc}</div>
-				<div className="col-2"></div>				
+				<div className="col-1 col-xl-2"></div>
+				<div className="col-10 col-xl-8 contentOne pl-4" dangerouslySetInnerHTML={{ __html: this.state.nowIdiom.projects[this.state.nowProject].sources[this.state.nowSource].desc }}>
+			
+
+		
+				</div>
+				<div className="col-1 col-xl-2"></div>				
 			</div>		
 			
 				<div className="supMarginContent" ></div>			
