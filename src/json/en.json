@@ -94,7 +94,7 @@
 			"2":{
 				"title":"Operation Smile",
 				"thumbnail":"./sources/osv/img/thumbnail.png",
-				"desc":"This project was part of community service, the goal of the project was developt administration model to generate reports (PDF) of the patiens and journals.<br><br>The prototype of the report was very basic and include some plots with data from a development database. ",
+				"desc":"This project was part of a community service and it aimed to develop administration model to generate reports (PDF) of the patiens and journals.<br><br>The prototype of the report was very basic and includes some plots with data from a development database. ",
 				"tech":["Django","Javascript","HTML"],
 				"sources":{
 					"1":{
@@ -144,7 +144,7 @@
 			"3":{
 				"title":"Snake IA",
 				"thumbnail":"./sources/snake/img/thumbnail.png",
-				"desc":"This project consisted in the implementation of a small program which can learn to play the snake game, this phase of the project has a focus on let the program learn how the head of the snake can move around the scenario without hit with the borders. <br><br> For this part, the interaction with the  body of the snake wasn't part of this phase, the models used was Nearest Neihborst and Random Forest with the library SKLEARN.",
+				"desc":"This project consisted in the implementation of a small program which can learn how to play the snake game. At this part of the project has a focus on let the program learn how snake head can move around the scenario without hitting against the walls. <br><br> For this part, the interaction with the snake body wasn't part of this phase, the models used was Nearest Neihborst and Random Forest with the library SKLEARN.",
 				"tech":["Python","SKLEARN"],
 				"sources":{
 					"1":{
@@ -197,7 +197,7 @@
 						"value":"./sources/sls/vid/v1.mp4",
 						"type":"v",
 						"title":"Demo video # 1",
-						"desc":"Application running in the concert the <a href='https://www.facebook.com/watch/?v=504904333610663'>Original source</a> is from the Official Page of <a href='https://www.facebook.com/BarrioLatinoOeiras/'>Barrio Latino Oeiras (Portugal)</a>"
+						"desc":"Application running in the concert, the <a href='https://www.facebook.com/watch/?v=504904333610663'>Original source</a> is from the Official Page of <a href='https://www.facebook.com/BarrioLatinoOeiras/'>Barrio Latino Oeiras (Portugal)</a>"
 					},
 					"2":{
 						"value":"./sources/sls/vid/v2.mp4",
