@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import cv_en from './../../cv/cv_en.pdf';
+import cv_es from './../../cv/cv_es.pdf';
 
 class Profile extends Component {
 		
@@ -75,7 +77,7 @@ class Profile extends Component {
 					<div className='titleOne align-bottom text-center'><b>{this.state.nowIdiom.profile.p1.title}</b></div>
 					<div className='titleTwo text-center text-sm-center text-md-center text-lg-right text-xl-right'>
 					
-						<a href="./cv.pdf">{this.state.nowIdiom.profile.p1.subtitle}</a>
+						<a rel="noopener noreferrer" href={this.state.nowIdiom.profile.p1.title === 'Professional Profile' ? cv_en : cv_es} target='_blank'>{this.state.nowIdiom.profile.p1.subtitle}</a>
 						
 					</div>
 				</div>

@@ -69,21 +69,21 @@
 			"1":{
 				"title":"Wonder Personality",
 				"thumbnail":"./sources/wonder/img/thumbnail.png",
-				"desc":"<a href='http://wonderpersonality.com'>wonderpersonality.com</a> <br> Wonder Personality es un sitio para aprender acerca de tu personalidad a traves de un quiz, posee un diseño responsive y un gran cuidado en los detalles visuales y de estructura, haciendolo lucir profesional y limpio.",
+				"desc":"<a href='http://wonderpersonality.com'>Wonder Personality</a> es un sitio para aprender acerca de tu personalidad a traves de un quiz, posee un diseño responsive y un gran cuidado en los detalles visuales y de estructura, haciendolo lucir profesional y limpio.",
 				"tech":["PHP","Javascript","HTML"],
 				"sources":{
 					"1":{
 						"value":"./sources/wonder/vid/v1.mp4",
 						"type":"v",
-						"title":"Video del proyecto",
-						"desc":"Vista superficial del sitio"
+						"title":"Video de demostración",
+						"desc":"Video demostrativo del sitio web"
 					}
 				}
 			},
 			"2":{
 				"title":"Operation Smile",
 				"thumbnail":"./sources/osv/img/thumbnail.png",
-				"desc":"Este es un proyecto de un módulo administrativo de uso interno, el objetivo del proyecto fue crear algunas gráficas a partir de información en una base de datos. La idea principal es que el usuario pudiera hacer las graficas solamente selecconando las distinta combinación de opciones disponibles, dejando a los rabajadores obtener rapidos vistazos de las jordanas realizadas en un periodo de tiempo y región en especifico. El proyecto fue un prototipo, el cual solo necesita una plantilla para el PDF. Cabe destacar que los datos utilizados durante el desarrollo fueron de prueba",
+				"desc":"Este proyecto fue parte del servicio comunitario, el objetivo fue el desarrollo de un módulo de administración para generar reportes (PDF) de sus pacientes y jornadas.<br><br> El prototipo del reporte fue muy básico e incluye algunas gráficas sobre los datos obtenidos de la base de datos de desarrollo.",
 				"tech":["Django","Javascript","HTML"],
 				"sources":{
 					"1":{
@@ -96,44 +96,44 @@
 						"value":"./sources/osv/img/s1.png",
 						"type":"i",
 						"title":"Screenshot # 1",
-						"desc":"Selecciona las regiones"
+						"desc":"Selección de las regiones"
 					},
 					"3":{
 						"value":"./sources/osv/img/s2.png",
 						"type":"i",
 						"title":"Screenshot # 2",
-						"desc":"Selecciona el tipo de pregunta a realizar"
+						"desc":"Selección del tipo de consulta a realizar"
 					},
 					"4":{
 						"value":"./sources/osv/img/s3.png",
 						"type":"i",
 						"title":"Screenshot # 3",
-						"desc":"Selecciona la edad"
+						"desc":"Selección de la edad"
 					},
 					"5":{
 						"value":"./sources/osv/img/s4.png",
 						"type":"i",
 						"title":"Screenshot # 4",
-						"desc":"Selecciona el tipo de gráfica (Barras) y lo muestra en el lugar"
+						"desc":"Selección del tipo de gráfica (Barras) y muestra previa"
 					},
 					"6":{
 						"value":"./sources/osv/img/s5.png",
 						"type":"i",
 						"title":"Screenshot",
-						"desc":"Selecciona el tipo de gráfica (Torta) y lo muestra en el lugar"
+						"desc":"Selección del tipo de gráfica (Torta) y muestra previa"
 					},
 					"7":{
 						"value":"./sources/osv/img/s6.png",
 						"type":"i",
 						"title":"Screenshot # 6",
-						"desc":"Prototipo del reporte con las gráficas generadas"
+						"desc":"Prototipo del reporte con las gráficas generadas por  la consulta"
 					}
 				}
 			},
 			"3":{
 				"title":"Snake IA",
 				"thumbnail":"./sources/snake/img/thumbnail.png",
-				"desc":"Este pequeño proyecto, tenia el objetivo de aprender algunas aplicaciones de la liberia sklearn y sobre lo básico de los algoritmos de machine learning y modelos matematicas. La primera parte asume que el snake tiene una longitud 1. El objetivo era hacer que el sanek aprendiera a no chocarse contra los muros . Al principio el algoritmo de Nearest Neighbors funcionó realmente bien. Sin embargo cuando existian muros entre la forma cuadrada, se dificultaba para el modelo obtener una clasificación apropiada cuando pasaba atraves de los bordes . Al algoritmo de random forest obtuvo un mejor desempeño a un costo de procesamiento computacional significativamente mayor ",
+				"desc":"El proyecto consistió en construir un pequeño programa que aprendiera a jugar el juego de snake, para esta fase del proyecto se enfocó en hacer que la cabeza del snake aprendiera a desplazarse sin chocarse contra las paredes del escenario. <br><br>Para esta fase no se habia tomado en cuenta el cuerpo del snake, los modelos utilizados fueron Nearest Neighborst y Random Forest con la libreria SKLEARN",
 				"tech":["Python","SKLEARN"],
 				"sources":{
 					"1":{
@@ -165,50 +165,55 @@
 			"4":{
 				"title":"See Together",
 				"thumbnail":"./sources/see/img/thumbnail.png",
-				"desc":"Un proyecto personal para aprender como usar django channels para y lograr realizar el chat apoyado con Redis. La sincronización siguio el mismo principio de la comunicación por chat, haciendolo bastante confiable en cuestions de sincronización del tiempo",
+				"desc":"Un proyecto personal para practicar la utlización de websockets (Django channels), apoyado con Redis. Consiste en un chat y la sincronización de video para multiples usuarios en una misma sala",
 				"tech":["Django","Javascript","HTML"],
 				"sources":{
 					"1":{
 						"value":"./sources/see/vid/v1.mp4",
 						"type":"v",
 						"title":"Video # 1",
-						"desc":"Sincronizando video y chat"
+						"desc":"Aplicación para conversar y sincronizar videos entre los usuarios que pertenezcan a una misma sala"
 					}
 				}			
 			},
 			"5":{
 					"title":"Feed de instagram en pantalla grande de concierto",
 					"thumbnail":"./sources/sls/img/thumbnail.png",
-					"desc":"El proyecto consistió en la elaboración de un sistema para es despliegue de imagenes publicadas por usuarios en la red social de instagram para el evento de <a href='https://www.facebook.com/BarrioLatinoOeiras/'>Barrio Latino Oeiras (Portugal)</a>",
+					"desc":"El proyecto consistió en la elaboración de un sistema para el despliegue de imagenes publicadas por usuarios de la red social de instagram para el evento de <a href='https://www.facebook.com/BarrioLatinoOeiras/'>Barrio Latino Oeiras (Portugal)</a>",
 					"tech":["PHP","Javascript","HTML"],
 					"sources":{
 						"1":{
 							"value":"./sources/concert/vid/v1.mp4",
 							"type":"v",
-							"title":"Video del proyecto en vivo",
-							"desc":"Video demostrativo de la aplicación durante el concierto, el <a href='https://www.facebook.com/watch/?v=504904333610663'>Recurso original</a> pertenece a la pagina oficial de <a href='https://www.facebook.com/BarrioLatinoOeiras/'>Barrio Latino Oeiras (Portugal)</a>"
-						},"2":{
-							"value":"./sources/concert/img/s1.png",
+							"title":"Video demostrativo # 1",
+							"desc":"Aplicación durante el concierto, el <a href='https://www.facebook.com/watch/?v=504904333610663'>Recurso original</a> pertenece a la pagina oficial de <a href='https://www.facebook.com/BarrioLatinoOeiras/'>Barrio Latino Oeiras (Portugal)</a>"
+						},			
+						"2":{
+							"value":"./sources/sls/vid/v2.mp4",
 							"type":"v",
-							"title":"Video del proyecto en vivo",
-							"desc":"Video del proyecto en vivo"
-						},"3":{
-							"value":"./sources/concert/img/s2.png",
-							"type":"v",
-							"title":"Video del proyecto en vivo",
-							"desc":"Video del proyecto en vivo"
-						},"4":{
-							"value":"./sources/concert/img/thumbnail.png",
-							"type":"v",
-							"title":"Video del proyecto en vivo",
-							"desc":"Video del proyecto en vivo"
+							"title":"Video demostrativo # 2 ",
+							"desc":"Proyecto ejecutandose en el navegador web"
+						},
+						"3":{
+							"value":"./sources/sls/img/s1.png",
+							"type":"i",
+							"title":"Captura de pantalla #1",
+							"desc":"Proyecto ejecutandose en el navegador web"
+						},
+						"4":{
+							"value":"./sources/sls/img/s2.png",
+							"type":"i",
+							"title":"Captura de pantalla #2",
+							"desc":"Proyecto ejecutandose en el navegador web"
 						}
+							
+
 					}
 				},
 				"6":{
-					"title":"Registro de invitados",
+					"title":"Registro de invitados (Concierto)",
 					"thumbnail":"./sources/guest/img/thumbnail.png",
-					"desc":"<a href='http://wonderpersonality.com'>wonderpersonality.com</a> <br> Wonder Personality is a site to learn about your personality trought a quiz. It have a responsive design. And is worked with a lot of detail in the visuals and structure. Making it looks proffesional, clean and beautifull. ",
+					"desc":"El proyecto consistió en el desarrollo de una plataforma que permitia a usuarios con codiciones especificias ( Embarazadas o usando silla de ruedas ) registrarse para los conciertos y poder organizar la logistica de la ubicación de los mismos en un area preferencial. <br><br> Se aplicó en los conciertos de Nos Alive 2019 (Portugal), posteriormente fue adaptado y mejorado para el concierto de MUSE en portugal.",
 					"tech":{
 						"1":{
 							"src":"./img/icons/CSS.png",
@@ -225,28 +230,34 @@
 					},
 					"sources":{
 						"1":{
-							"value":"./sources/sls/vid/v1.mp4",
-							"type":"v",
+							"value":"./sources/guest/img/s4.png",
+							"type":"i",
 							"title":"Captura de pantalla",
-							"desc":"Barrio Latino Oeiras (Portugal)"
+							"desc":"Selección de los eventos que asitiría el usuario"
 						},
 						"2":{
-							"value":"./sources/sls/vid/v2.mp4",
-							"type":"v",
+							"value":"./sources/guest/img/s5.png",
+							"type":"i",
 							"title":"Captura de pantalla",
-							"desc":"Barrio Latino Oeiras (Portugal)"
+							"desc":"Página principal de la plataforma"
 						},
 						"3":{
-							"value":"./sources/sls/img/s1.png",
+							"value":"./sources/guest/img/s1.png",
 							"type":"i",
 							"title":"Captura de pantalla",
-							"desc":"Barrio Latino Oeiras (Portugal)"
+							"desc":"Página principal de la plataforma en portugues"
 						},
 						"4":{
-							"value":"./sources/sls/img/s2.png",
+							"value":"./sources/guest/img/s2.png",
 							"type":"i",
 							"title":"Captura de pantalla",
-							"desc":"Barrio Latino Oeiras (Portugal)"
+							"desc":"Página principal de la plataforma en ingles"
+						},
+						"5":{
+							"value":"./sources/guest/img/s3.png",
+							"type":"i",
+							"title":"Captura de pantalla",
+							"desc":"Formulario de registro en el sistema"
 						}
 						
 					}
