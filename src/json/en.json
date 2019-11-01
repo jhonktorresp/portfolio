@@ -163,7 +163,7 @@
 						"value":"./sources/snake/vid/vid3.mp4",
 						"type":"v",
 						"title":"Video # 3",
-						"desc":"Status of the snake with 100000 games of learning (Nearest Neighbors Algorythm)"
+						"desc":"Status of the snake with 100000 games of learning (Nearest Neighbors)"
 					},
 					"4":{
 						"value":"./sources/snake/vid/vid4.mp4",
