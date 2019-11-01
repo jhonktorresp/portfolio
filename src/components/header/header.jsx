@@ -10,8 +10,17 @@ class Header extends Component {
 	enData = this.props.en;
 		
 	state={
-		nowIdiom: this.enData,
+		nowIdiom: this.initialIdiom(),
 		nowActive: 'profile'
+	}
+	
+	initialIdiom(){
+		
+		if(navigator.language.indexOf('es')!==-1 || navigator.userLanguage==='es-419'){
+			return this.esData;
+		}
+		
+		return this.enData;
 	}
 	
 	changeIdiom(value){
