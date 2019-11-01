@@ -133,7 +133,7 @@
 			"3":{
 				"title":"Snake IA",
 				"thumbnail":"./sources/snake/img/thumbnail.png",
-				"desc":"El proyecto consistió en construir un pequeño programa que aprendiera a jugar el juego de snake, para esta fase del proyecto se enfocó en hacer que la cabeza del snake aprendiera a desplazarse sin chocarse contra las paredes del escenario. <br><br>Para esta fase no se habia tomado en cuenta el cuerpo del snake, los modelos utilizados fueron Nearest Neighborst y Random Forest con la libreria SKLEARN",
+				"desc":"El proyecto consistió en construir un pequeño programa que aprendiera a jugar el juego de snake, para esta fase del proyecto se enfocó en hacer que la cabeza del snake aprendiera a desplazarse sin chocarse contra las paredes del escenario. <br><br>Para esta fase no se habia tomado en cuenta el cuerpo del snake, los modelos utilizados fueron Nearest Neighbors y Random Forest con la libreria SKLEARN",
 				"tech":["Python","SKLEARN"],
 				"sources":{
 					"1":{
