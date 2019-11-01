@@ -213,7 +213,7 @@
 				"6":{
 					"title":"Registro de invitados (Concierto)",
 					"thumbnail":"./sources/guest/img/thumbnail.png",
-					"desc":"El proyecto consistió en el desarrollo de una plataforma que permitia a usuarios con codiciones especificias ( Embarazadas o usando silla de ruedas ) registrarse para los conciertos y poder organizar la logistica de la ubicación de los mismos en un area preferencial. <br><br> Se aplicó en los conciertos de Nos Alive 2019 (Portugal), posteriormente fue adaptado y mejorado para el concierto de MUSE en portugal.",
+					"desc":"El proyecto consistió en el desarrollo de una plataforma que permitia a usuarios con condiciones especificias ( Embarazadas o usando silla de ruedas ) registrarse para los conciertos y poder organizar la logistica de la ubicación de los mismos en un area preferencial. <br><br> Se aplicó en los conciertos de Nos Alive 2019 (Portugal), posteriormente fue adaptado y mejorado para el concierto de MUSE en portugal.",
 					"tech":{
 						"1":{
 							"src":"./img/icons/CSS.png",
@@ -245,13 +245,13 @@
 							"value":"./sources/guest/img/s1.png",
 							"type":"i",
 							"title":"Captura de pantalla",
-							"desc":"Página principal de la plataforma en portugues"
+							"desc":"Página principal de la plataforma en portugués"
 						},
 						"4":{
 							"value":"./sources/guest/img/s2.png",
 							"type":"i",
 							"title":"Captura de pantalla",
-							"desc":"Página principal de la plataforma en ingles"
+							"desc":"Página principal de la plataforma en inglés"
 						},
 						"5":{
 							"value":"./sources/guest/img/s3.png",
