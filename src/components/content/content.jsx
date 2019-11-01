@@ -16,7 +16,7 @@ class Content extends Component {
   
 	state={
 		nowIdiom:this.props.nowIdiom,
-		nowProject:this.randomProject(false),
+		nowProject:"3",
 		nowActive:this.props.nowActive,
 		nowChangeProject:this.nowChangeProject,
 		nowSource:1,

@@ -183,10 +183,10 @@
 					"tech":["PHP","Javascript","HTML"],
 					"sources":{
 						"1":{
-							"value":"./sources/concert/vid/v1.mp4",
+							"value":"./sources/sls/vid/v1.mp4",
 							"type":"v",
 							"title":"Video demostrativo # 1",
-							"desc":"Aplicación durante el concierto, el <a href='https://www.facebook.com/watch/?v=504904333610663'>Recurso original</a> pertenece a la pagina oficial de <a href='https://www.facebook.com/BarrioLatinoOeiras/'>Barrio Latino Oeiras (Portugal)</a>"
+							"desc":"Aplicación durante el concierto, el <a href='https://www.facebook.com/watch/?v=504904333610663'>video original</a> pertenece a la pagina oficial de <a href='https://www.facebook.com/BarrioLatinoOeiras/'>Barrio Latino Oeiras (Portugal)</a>"
 						},			
 						"2":{
 							"value":"./sources/sls/vid/v2.mp4",
