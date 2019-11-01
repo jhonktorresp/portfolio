@@ -90,7 +90,7 @@
 						"value":"./sources/osv/vid/v1.mp4",
 						"type":"v",
 						"title":"Video de demostración",
-						"desc":"Demo to show report generation"
+						"desc":"Video demostrativo sobre el proceso de generación de reportes"
 					},
 					"2":{
 						"value":"./sources/osv/img/s1.png",
